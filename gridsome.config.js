@@ -20,7 +20,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'http://192.168.1.80/index.php', // required
+        baseUrl: 'https://wp-news-api.herokuapp.com', // required
         apiBase: 'wp-json',
         typeName: 'WordPress',
         perPage: 100,
