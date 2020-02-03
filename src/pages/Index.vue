@@ -4,7 +4,7 @@
     <ul class="post-list">
       <h2>From Wordpress</h2>
       <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
-        <g-link :to="node.path">{{node.title}}{{node.excerpt}}</g-link>
+        <g-link :to="node.path">{{node.title}}</g-link><g-link :to="node.path">{{node.excerpt}}</g-link>
       </li>
       <h2>From Mark Down Files</h2>
       <li v-for="{ node } in $page.allPost.edges" :key="node.id">
